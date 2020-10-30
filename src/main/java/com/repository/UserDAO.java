@@ -1,8 +1,9 @@
-package com.dao;
+package com.repository;
 
 import com.model.User;
 
 import java.util.*;
+
 
 public class UserDAO {
     Map<Integer,User> userMap= new HashMap<>();

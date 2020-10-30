@@ -1,4 +1,4 @@
-package com.company;
+package com.model;
 
 import java.util.Set;
 
@@ -12,8 +12,22 @@ public class Book {
 
     public Book() {
     }
+    
+    
 
-    public Set<Review> getReviews() {
+    public Book(int bookId, String title, String author, String description, Category category, Set<Review> reviews) {
+		super();
+		this.bookId = bookId;
+		this.title = title;
+		this.author = author;
+		this.description = description;
+		this.category = category;
+		this.reviews = reviews;
+	}
+
+
+
+	public Set<Review> getReviews() {
         return reviews;
     }
 
